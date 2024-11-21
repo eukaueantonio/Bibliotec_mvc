@@ -14,7 +14,7 @@ namespace Bibliotec.Models
 
         public string? Nome { get; set; }
 
-        public DateOnly Nascimento { get; set; }
+        public DateOnly DtNascimento { get; set; }
 
         public string? Email { get; set; }
 
@@ -28,7 +28,7 @@ namespace Bibliotec.Models
 
         //Criar um atributo 
         //Eu falo para este atributo que ele eh uma FK
-        [ForeignKey ("Curso")]
+        [ForeignKey("Curso")]
         public int CursoID { get; set; }
         public Curso Curso { get; set; }
     }

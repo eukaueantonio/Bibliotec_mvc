@@ -21,5 +21,7 @@ namespace Bibliotec.Models
         public Livro Livro { get; set; }
 
         public DateOnly DtReserva { get; set; }
+        public DateOnly DtDevolucao { get; set; }
+        public int Status { get; set; }
     }
 }
