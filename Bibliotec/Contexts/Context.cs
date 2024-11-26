@@ -14,7 +14,7 @@ namespace Bibliotec.Contexts
         }
         public Context(DbContextOptions<Context> options) : base(options)
         {
-            
+
         }
 
         //OnConfiguring -> Possui a configuracao da conexao com o banco de dados 
@@ -25,7 +25,7 @@ namespace Bibliotec.Contexts
             //as configuracoes existem?
             if (!optionsBuilder.IsConfigured)
             {
-                
+
                 optionsBuilder.UseSqlServer(@"
                  Data Source=DESKTOP-FL7LTBT\SQLEXPRESS02; 
                  Initial Catalog = Bibliotec_mvc;
@@ -37,11 +37,13 @@ namespace Bibliotec.Contexts
         }
 
         //As tabelas do banco de dados
-        public DbSet<Categoria> Categoria{get; set;}
-        public DbSet<Curso> Curso{get; set;}
-        public DbSet<Livro> Livro{get; set;}
-        public DbSet<LivroCategoria> LivroCategoria{get; set;}
-        public DbSet<LivroReserva> LivroReserva{get; set;}
+        public DbSet<Categoria> Categoria { get; set; }
+        public DbSet<Curso> Curso { get; set; }
+        public DbSet<Livro> Livro { get; set; }
+        public DbSet<LivroCategoria> LivroCategoria { get; set; }
+        public DbSet<LivroReserva> LivroReserva { get; set; }
+
+        public DbSet<Usuario> Usuario { get; set; }
 
     }
 

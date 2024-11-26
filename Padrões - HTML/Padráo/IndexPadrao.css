@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --dark-blue: #26333d;
   --blue: #4a67df;
@@ -32,7 +31,6 @@ body {
   margin: 0 auto;
   /* border: 1px solid red; */
 }
-
 .header-flex {
   display: flex;
   justify-content: space-between;
@@ -47,7 +45,6 @@ body {
   height: 96px;
   /* border: 1px solid white; */
 }
-
 .header .navbar .logo-mobile,
 .header .navbar .arrow-left,
 .menu-hamburger {
@@ -63,7 +60,6 @@ body {
   text-transform: uppercase;
   transition: color 0.4s;
 }
-
 .header .navbar .navbar-item:hover {
   color: var(--green);
 }
@@ -112,7 +108,6 @@ body {
   font-size: 25px;
   font-weight: 300;
 }
-
 .btn-acessar {
   display: flex;
   justify-content: center;
@@ -139,7 +134,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 /* Caixa de título genérica - todas as sessões */
 .titulo2 {
   width: 100%;
@@ -220,7 +214,7 @@ body {
   align-items: center;
   height: 100%;
   padding: 0;
-}
+} 
 
 .plataforma .totalmente-gratis {
   position: absolute;
@@ -229,7 +223,7 @@ body {
   width: 606px;
   height: 445px;
   background-image: url(~/images/totalmente-gratis.png);
-  background-size: cover;
+  background-size:  cover;
   background-repeat: no-repeat;
   /* border: 2px solid green; */
 }
@@ -268,7 +262,6 @@ body {
   flex-wrap: wrap;
   gap: 15px;
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -283,16 +276,15 @@ body {
 
 .card h3 {
   margin: 20px 0;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
+ font-size: 20px;
+ text-align: center;
+ text-transform: uppercase;
 }
 
 .card span {
   margin-bottom: 10px;
   font-size: 15px;
 }
-
 .card span.titulo-autor {
   font-weight: 700;
 }
@@ -303,18 +295,15 @@ body {
   color: white;
   background-color: var(--dark-blue);
 }
-
 .footer h4 {
   color: var(--green);
   font-size: 16px;
   font-weight: 600;
 }
-
 .footer a {
   color: white;
   text-decoration: none;
 }
-
 .footer .right {
   padding: 20px;
   text-align: center;
@@ -327,6 +316,11 @@ body {
   min-height: 245px;
   padding: 15px 0 25px;
   border-bottom: 1px solid white;
+}
+
+/* apagar */
+.footer-logo, .footer-nav {
+  /* border: 1px solid red; */
 }
 
 .footer-logo {
@@ -350,7 +344,6 @@ body {
   justify-content: space-between;
   width: 500px;
 }
-
 .footer .footer-nav .left-info,
 .footer .footer-nav .right-info {
   display: flex;
@@ -364,17 +357,15 @@ body {
   width: 100%;
   line-height: 40px;
 }
-
 .footer .footer-nav h4.sociais-titulo,
 .footer .footer-nav span.sociais {
   margin-top: 60px;
 }
-
 .footer .footer-nav span.sociais {
-  width: 100%;
+width: 100%;
 }
 
-.footer .footer-nav span.sociais a>img {
+.footer .footer-nav span.sociais a > img {
   width: 22px;
   height: 22px;
   margin-right: 15px;
@@ -384,10 +375,8 @@ body {
   width: 100%;
   line-height: 40px;
 }
-
 /* Mobile e Tablet */
 @media screen and (max-width: 991px) {
-
   /* classes genéricas */
   .mostra-menu {
     left: 0 !important;
@@ -405,13 +394,11 @@ body {
     width: 100%;
     height: 100%;
   }
-
   .menu-hamburger {
     display: block;
     width: 45px;
     transition: transform 0.4s;
   }
-
   .menu-hamburger-rotate {
     transform: rotate(45deg);
   }
@@ -431,7 +418,6 @@ body {
     border-radius: 0 0 40px 0;
     transition: left 0.4s, opacity 0.6s;
   }
-
   .header .navbar .arrow-left {
     position: absolute;
     top: 25px;
@@ -445,8 +431,7 @@ body {
     position: absolute;
     top: 100px;
     left: calc(50% - 40px);
-    display: block;
-    /* estava escondido no desktop */
+    display: block; /* estava escondido no desktop */
     width: 80px;
   }
 
@@ -456,11 +441,9 @@ body {
     height: 562px;
     padding: 20px;
   }
-
   .banner-image {
     display: none;
   }
-
   .banner .banner-info h1 {
     font-size: 25px;
     text-align: center;
@@ -470,7 +453,6 @@ body {
     font-size: 20px;
     text-align: center;
   }
-
   .banner .banner-info a {
     align-self: center;
   }
@@ -483,7 +465,6 @@ body {
   .titulo2 hr {
     width: 80%;
   }
-
   .motivos-flex {
     justify-content: center;
     gap: 30px;
@@ -504,12 +485,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-
   .plataforma .plataforma-info h2 {
     font-size: 30px;
     text-align: center;
   }
-
+  
   .plataforma .plataforma-info p {
     font-size: 20px;
   }
@@ -523,32 +503,28 @@ body {
   .footer-mobile-only {
     display: block;
   }
-
   .footer-flex {
     flex-direction: column;
     /* justify-content: flex-start; */
     align-items: center;
   }
-
   .footer-logo {
     justify-content: center;
     /* align-items: center; */
     height: 150px;
-
+    
   }
-
+  
   .footer-logo .img-footer-logo,
-  .footer-logo .img-footer-senai {
+  .footer-logo .img-footer-senai  {
     width: 100%;
     width: 150px;
   }
-
   .footer-logo .img-footer-logo {
     width: 150px;
     margin-bottom: 20px;
   }
-
-  .footer-logo .img-footer-senai {
+  .footer-logo .img-footer-senai  { 
     margin-bottom: 40px;
   }
 
@@ -558,13 +534,10 @@ body {
     align-items: center;
     width: auto;
   }
-
-  .footer .footer-nav .left-info,
-  .footer .footer-nav .right-info {
+  .footer .footer-nav .left-info, .footer .footer-nav .right-info {
     min-height: 140px;
     /* border: 1px solid red; */
   }
-
   .footer .footer-nav h4.sociais-titulo {
     display: none;
   }
