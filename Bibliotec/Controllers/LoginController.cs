@@ -56,10 +56,11 @@ namespace Bibliotec.Controllers
             else
             {
                 Console.WriteLine($"Dados de login validos");
+                HttpContext.Session.SetString("UsuarioID", usuarioBuscado.ToString());
+                HttpContext.Session.SetString("Admin", usuarioBuscado.ToString());
                 return LocalRedirect("~/Livro");
 
             }
-            return View();
         }
 
         // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

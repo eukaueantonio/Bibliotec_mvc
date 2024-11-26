@@ -43,7 +43,6 @@ namespace Bibliotec.Contexts
         public DbSet<LivroCategoria> LivroCategoria { get; set; }
         public DbSet<LivroReserva> LivroReserva { get; set; }
 
-        public DbSet<Usuario> Usuario { get; set; }
 
     }
 
